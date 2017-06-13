@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bangungo.controller.AdminBalasKeluhanController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../Office-Feature.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="87.0" fitWidth="600.0" layoutX="-1.0" layoutY="12.0" opacity="0.7">
+         <image>
+            <Image url="@../../../Untitled-1s.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="-45.0" layoutY="-47.0">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="153.0" layoutY="30.0" text="Lihat &amp; Balas Keluhan" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="344.0" fitWidth="600.0" layoutY="139.0" opacity="0.7">
+         <image>
+            <Image url="@../../../Untitled-1s.png" />
+         </image>
+      </ImageView>
+      <ToolBar layoutY="99.0" prefHeight="40.0" prefWidth="600.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#CRUDMaterialB" prefHeight="25.0" prefWidth="182.0" text="CRUD Material" />
+            <Button mnemonicParsing="false" onAction="#hapusAkunB" prefHeight="25.0" prefWidth="210.0" text="Hapus Akun" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#keluhanB" prefHeight="25.0" prefWidth="182.0" text="Lihat &amp; Balas Keluhan" />
+        </items>
+      </ToolBar>
+      <Button layoutX="529.0" layoutY="44.0" mnemonicParsing="false" onAction="#logOutB" text="Log Out" />
+      <Label layoutX="15.0" layoutY="238.0" text="Masukkan balasan anda" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balasanTF" layoutX="12.0" layoutY="265.0" opacity="0.98" prefHeight="173.0" prefWidth="186.0" />
+      <Button layoutX="88.0" layoutY="447.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Kirim" />
+      <TableView fx:id="keluhanTV" layoutX="211.0" layoutY="160.0" prefHeight="278.0" prefWidth="375.0">
+         <columns>
+            <TableColumn fx:id="idBarangTC" prefWidth="67.0" text="Id Barang" />
+            <TableColumn fx:id="keluhanTC" minWidth="0.0" prefWidth="151.0" text="Keluhan" />
+            <TableColumn fx:id="BalasanKeluhanTC" prefWidth="156.0" text="Balasan Keluhan" />
+         </columns>
+      </TableView>
+      <Label layoutX="16.0" layoutY="171.0" text="ID Barang" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idBarangTF" layoutX="16.0" layoutY="196.0" prefHeight="25.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bangungo.controller.UserkomentarController">
+   <children>
+      <ImageView fitHeight="532.0" fitWidth="756.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../../user-avatars-pack_23-2147502629.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="756.0" layoutY="13.0">
+         <image>
+            <Image url="@../../../garis.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="160.0" layoutX="-24.0" layoutY="-25.0">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="389.0" fitWidth="756.0" layoutY="134.0">
+         <image>
+            <Image url="@../../../garis.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="29.0" text="Keluhan" textFill="#f5f0f0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="218.0" text="Masukkan keluhan anda" textFill="#fcf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="161.0" text="Id Barang" textFill="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="518.0" fitWidth="756.0" layoutX="2.0" layoutY="12.0" opacity="0.15">
+         <image>
+            <Image url="@../../../BlogComments.jpg" />
+         </image>
+      </ImageView>
+      <ToolBar layoutY="94.0" prefHeight="40.0" prefWidth="749.0">
+         <items>
+            <Button mnemonicParsing="false" onAction="#beliBarangB" prefHeight="25.0" prefWidth="233.0" text="Beli Barang" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#keluhanB" prefHeight="25.0" prefWidth="249.0" text="Keluhan" />
+            <Button mnemonicParsing="false" onAction="#ubahProfilB" prefHeight="25.0" prefWidth="242.0" text="Ubah Profil" />
+         </items>
+      </ToolBar>
+      <TableView fx:id="keluhanTV" layoutX="293.0" layoutY="171.0" prefHeight="301.0" prefWidth="442.0">
+        <columns>
+          <TableColumn fx:id="idBarangTC" prefWidth="103.0" text="Id Barang" />
+            <TableColumn fx:id="keluhanTC" minWidth="0.0" prefWidth="184.0" text="Keluhan" />
+            <TableColumn fx:id="balasanKeluhanTC" prefWidth="154.0" text="Balasan Keluhan" />
+        </columns>
+      </TableView>
+      <Button layoutX="161.0" layoutY="480.0" mnemonicParsing="false" onAction="#kirimB" prefHeight="25.0" prefWidth="110.0" text="Kirim" />
+      <Button layoutX="682.0" layoutY="31.0" mnemonicParsing="false" onAction="#logOutB" prefHeight="25.0" prefWidth="59.0" text="Log Out" />
+      <TextField fx:id="keluhanTF" layoutX="10.0" layoutY="240.0" opacity="0.98" prefHeight="233.0" prefWidth="262.0" />
+      <TextField fx:id="idBarangTF" layoutX="12.0" layoutY="181.0" />
+   </children>
+</AnchorPane>

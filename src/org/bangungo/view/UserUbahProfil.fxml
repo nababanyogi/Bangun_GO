@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bangungo.controller.UserUbahProfilController">
+   <children>
+      <ImageView fitHeight="595.0" fitWidth="643.0" layoutY="-28.0" opacity="0.44">
+         <image>
+            <Image url="@../../../user-avatars-pack_23-2147502629.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="643.0" layoutY="8.0">
+         <image>
+            <Image url="@../../../garis.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="384.0" fitWidth="643.0" layoutY="140.0">
+         <image>
+            <Image url="@../../../garis.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="165.0" fitWidth="167.0" layoutX="-32.0" layoutY="-25.0">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="135.0" layoutY="23.0" text="Ubah Profil" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ToolBar layoutY="100.0" prefHeight="40.0" prefWidth="643.0">
+        <items>
+            <Button mnemonicParsing="false" onAction="#beliBarangB" prefHeight="25.0" prefWidth="205.0" text="Beli Barang" />
+          <Button mnemonicParsing="false" onAction="#keluhanB" prefHeight="25.0" prefWidth="212.0" text="Keluhan" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#ubahProfilB" prefHeight="25.0" prefWidth="197.0" text="Ubah Profil" />
+        </items>
+      </ToolBar>
+      <Button layoutX="570.0" layoutY="38.0" mnemonicParsing="false" onAction="#logOutB" text="Log Out" />
+      <Label layoutX="27.0" layoutY="170.0" text="Nama" textFill="#fcf5f5" />
+      <Label layoutX="25.0" layoutY="213.0" text="Alamat" textFill="#fcfafa" />
+      <Label layoutX="25.0" layoutY="301.0" text="Tanggal Lahir" textFill="#f5efef" />
+      <Label layoutX="27.0" layoutY="432.0" text="Nomor Telepon" textFill="#fffbfb" />
+      <Label layoutX="25.0" layoutY="258.0" text="Jenis Kelamin" textFill="#fffafa" />
+      <Label layoutX="29.0" layoutY="345.0" text="Email" textFill="#fffdfd" />
+      <Label layoutX="27.0" layoutY="390.0" text="Password" textFill="#fcf7f7" />
+      <TextField fx:id="noTelpTF" layoutX="212.0" layoutY="428.0" />
+      <TextField fx:id="alamatTF" layoutX="212.0" layoutY="209.0" />
+      <TextField fx:id="namaTF" layoutX="213.0" layoutY="166.0" />
+      <DatePicker fx:id="datePickerDP" layoutX="212.0" layoutY="297.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="jenisKelaminTF" layoutX="212.0" layoutY="254.0" onAction="#jenisKelaminAction" prefWidth="150.0" />
+      <Button layoutX="28.0" layoutY="473.0" mnemonicParsing="false" onAction="#ubahFotoProfil" prefHeight="25.0" prefWidth="150.0" text="Ubah Foto Profil" />
+      <Button layoutX="212.0" layoutY="473.0" mnemonicParsing="false" onAction="#simpanB" prefHeight="25.0" prefWidth="149.0" text="Simpan" />
+      <PasswordField fx:id="passwordTF" layoutX="212.0" layoutY="386.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="emailTF" layoutX="212.0" layoutY="341.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="545.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../Tips-for-Buying-Online-Safely.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="72.0" fitWidth="606.0" layoutX="-6.0" opacity="0.9">
+         <image>
+            <Image url="@../../../Untitled-1s.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="457.0" fitWidth="606.0" layoutX="-6.0" layoutY="93.0" opacity="0.9">
+         <image>
+            <Image url="@../../../Untitled-1s.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="7.0" text="Transaksi" textFill="WHITE">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="162.0" fitWidth="200.0" layoutX="25.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="224.0" layoutY="486.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="85.0" text="Beli" />
+      <Label layoutX="241.0" layoutY="112.0" text="Informasi Produk" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="307.0" text="Harga" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="353.0" text="Jumlah Stok" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="403.0" text="Jumlah Dibeli" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="446.0" text="Total Harga" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <TextField layoutX="210.0" layoutY="397.0" prefHeight="32.0" prefWidth="56.0" />
+      <Button layoutX="272.0" layoutY="397.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="34.0" text="+" />
+      <Text fill="WHITE" layoutX="242.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="146.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="167.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="168.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="170.0" layoutY="396.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="34.0" text="-" />
+      <Text fill="WHITE" layoutX="172.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button layoutX="487.0" layoutY="20.0" mnemonicParsing="false" onAction="#kembali" prefHeight="32.0" prefWidth="90.0" text="Kembali" />
+   </children>
+</AnchorPane>
